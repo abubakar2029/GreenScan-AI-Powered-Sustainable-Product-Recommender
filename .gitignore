@@ -1,0 +1,21 @@
+# Node + Python environments
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+
+# Model files
+server/model/*.h5
+
+# Dataset (local only)
+data/
+
+# React build files
+client/build/
+
+# Uploads or temp
+*.jpg
+*.jpeg
+*.png
