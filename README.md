@@ -14,14 +14,9 @@ Our mission is to empower consumers to make responsible, eco-conscious choices u
 - Recommends eco-friendly alternatives
 
 🚀 Features
-📷 Upload product image for AI analysis
-
-🔍 Sustainability rating based on database & ML models
-
-♻️ Alternative recommendations (with product links & tags)
-
-📊 Track how many sustainable choices user made
-
-🌍 Educational tips for eco-living
-
-📱 Mobile-optimized UI
+- 📷 Upload product image for AI analysis
+- 🔍 Sustainability rating based on database & ML models
+- ♻️ Alternative recommendations (with product links & tags)
+- 📊 Track how many sustainable choices user made
+- 🌍 Educational tips for eco-living
+- 📱 Mobile-optimized UI
