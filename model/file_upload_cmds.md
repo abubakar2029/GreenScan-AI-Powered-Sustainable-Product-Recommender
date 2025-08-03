@@ -1,10 +1,18 @@
 ## Upload all files
-huggingface-cli upload muhammadabubakarcs26/eco-image-classifier \
-    --repo-type dataset \
-    ./eco eco/ \
-    ./non_eco non_eco/ \
-    ./metadata.csv metadata.csv
+huggingface-cli upload muhammadabubakarcs26/eco-image-classifier ./eco --repo-type dataset
 
+huggingface-cli upload muhammadabubakarcs26/eco-image-classifier ./non_eco --repo-type dataset
+
+
+Hugging Face Login Token: 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
     
 ## verify uploads
-https://huggingface.co/datasets/muhammadabubakarcs26/eco-image-classifier
+
+
+### initialize Git LFS
+git lfs install
+
+### Track image file types
+git lfs track "*.jpg"
+git lfs track "*.jpeg"
+git lfs track "*.png"
