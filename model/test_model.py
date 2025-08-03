@@ -4,7 +4,7 @@ from tensorflow.keras.preprocessing import image
 import sys
 
 # Load the trained model
-model = load_model('fine_tuned_mobilenetv2.h5')
+model = load_model('eco_model_finetuned.h5')
 
 # Function to predict
 def predict_eco(img_path):

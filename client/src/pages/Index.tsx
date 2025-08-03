@@ -52,19 +52,25 @@ const Index = () => {
       const formData = new FormData();
       formData.append("image", selectedImage);
 
-      // Mock API call - replace with your actual Flask backend URL
-      // const response = await axios.post("http://localhost:5000/predict", formData, {
-      //   headers: {
-      //     'Content-Type': 'multipart/form-data',
-      //   },
-      // });
+      const response = await axios.post("http://localhost:8000/", formData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+        },
+      });
+      setResult(response.data);
+
+      toast({
+        title: "Analysis complete!",
+        description: `Your image scored ${response.data.score}/100 for eco-friendliness.`,
+      });
+
 
       // Mock response for demonstration
       await new Promise(resolve => setTimeout(resolve, 2000));
-      
+
       const mockResult: EcoResult = {
-        label: selectedImage.name.toLowerCase().includes('plant') || selectedImage.name.toLowerCase().includes('leaf') 
-          ? "Eco-Friendly Item" 
+        label: selectedImage.name.toLowerCase().includes('plant') || selectedImage.name.toLowerCase().includes('leaf')
+          ? "Eco-Friendly Item"
           : "Needs Improvement",
         score: Math.floor(Math.random() * 40) + 60, // Random score between 60-100
         suggestion: "Consider using more sustainable materials and reducing packaging waste. Look for eco-certifications when shopping.",
@@ -73,7 +79,7 @@ const Index = () => {
       };
 
       setResult(mockResult);
-      
+
       toast({
         title: "Analysis complete!",
         description: `Your image scored ${mockResult.score}/100 for eco-friendliness.`,
@@ -82,11 +88,11 @@ const Index = () => {
     } catch (err) {
       console.error("Prediction failed:", err);
       setError(
-        axios.isAxiosError(err) 
+        axios.isAxiosError(err)
           ? "Failed to connect to the analysis service. Please ensure the backend is running."
           : "An unexpected error occurred. Please try again."
       );
-      
+
       toast({
         title: "Analysis failed",
         description: "Please try again or check your connection.",
@@ -106,7 +112,7 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-eco-subtle">
       {/* Hero Section */}
       <div className="relative overflow-hidden">
-        <div 
+        <div
           className="absolute inset-0 bg-gradient-hero"
           style={{
             backgroundImage: `url(${heroImage})`,
@@ -139,7 +145,7 @@ const Index = () => {
       {/* Main Content */}
       <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto">
-          
+
           {/* How it works */}
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-6">How It Works</h2>
@@ -206,9 +212,9 @@ const Index = () => {
 
             {selectedImage && !isLoading && !result && !error && (
               <div className="text-center">
-                <Button 
-                  variant="eco" 
-                  size="lg" 
+                <Button
+                  variant="eco"
+                  size="lg"
                   onClick={handleSubmit}
                   className="min-w-48"
                 >
@@ -220,7 +226,7 @@ const Index = () => {
 
             {/* Results Section */}
             {result && <EcoResults result={result} />}
-            
+
             {/* Error Section */}
             {error && <ErrorMessage message={error} onRetry={handleRetry} />}
           </div>

@@ -15,7 +15,7 @@ def predict_image(request):
     try:
         img = Image.open(image)  # Optional: Validate it's a valid image
         # 🔮 TODO: Add real ML model prediction logic here
-
+        print("Image recieved :",image)
         # For demo, randomly decide eco-friendliness
         score = random.randint(30, 95)
         label = "Eco-Friendly" if score > 60 else "Not Eco-Friendly"
