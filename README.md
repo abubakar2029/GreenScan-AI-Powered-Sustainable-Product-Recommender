@@ -18,8 +18,7 @@ By combining computer vision with real-world sustainability data, we aim to make
 
 ## 🚀 Features  
 - 🖼️ Upload product image for real-time AI classification  
-- ♻️ View sustainability rating (with carbon impact, packaging score, etc.)  
-- 🔄 Suggests eco-friendly alternatives  
+- ♻️ View sustainability rating  
 - 📊 User dashboard to track eco-choices  
 - 📱 Mobile-optimized frontend  
 
