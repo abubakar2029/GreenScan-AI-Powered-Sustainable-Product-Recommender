@@ -1,24 +1,49 @@
-# GreenScan-AI-Powered-Sustainable-Product-Recommender
-📝 Description
+# 🌱 GreenScan – AI-Powered Sustainable Product Recommender
 
-GreenScan is an AI-powered web application that helps users make eco-friendly shopping decisions. Users can upload a photo of a product, and the system uses image recognition and AI analysis to identify the item and determine its sustainability level based on environmental factors, certifications, and ingredients/materials. If the product is not sustainable, the system recommends greener alternatives.
+## 📝 Description  
+**GreenScan** is an AI-powered web application that helps users identify and switch to eco-friendly products simply by uploading a product image. Using a deep learning model and sustainability database, the system analyzes the product and recommends more sustainable alternatives.
 
-Our mission is to empower consumers to make responsible, eco-conscious choices using the power of artificial intelligence.
+By combining computer vision with real-world sustainability data, we aim to make conscious shopping decisions easy, intuitive, and accessible for everyone.
 
-#📸 Key Feature: Product Image Analysis
-- Users upload a product image (e.g. a shampoo bottle, packaged food, or plastic item)
-- AI model identifies the product using image classification
-- The system checks the sustainability rating of that product
-- Displays eco-score (e.g. Green, Average, Not Sustainable)
-- Recommends eco-friendly alternatives
+---
 
-#🚀 Features
-- 📷 Upload product image for AI analysis
-- 🔍 Sustainability rating based on database & ML models
-- ♻️ Alternative recommendations (with product links & tags)
-- 📊 Track how many sustainable choices user made
-- 🌍 Educational tips for eco-living
-- 📱 Mobile-optimized UI
+## 📸 Key Feature: Product Image-Based Sustainability Analysis  
+- Upload a product image (e.g., food packet, shampoo bottle)
+- AI model (TensorFlow/Keras) classifies the product
+- The system fetches sustainability ratings, certifications, and material data
+- Suggests greener product alternatives
+- Displays eco-score badges 
 
-#🧠 Inspiration
-Many users want to choose sustainable products but don’t know how to verify them. We wanted to make this process as simple as clicking a photo — powered by AI — to get instant feedback and better options. GreenScan solves this by turning your camera into a green lifestyle assistant.
+---
+
+## 🚀 Features  
+- 🖼️ Upload product image for real-time AI classification  
+- ♻️ View sustainability rating (with carbon impact, packaging score, etc.)  
+- 🔄 Suggests eco-friendly alternatives  
+- 📊 User dashboard to track eco-choices  
+- 📱 Mobile-optimized frontend  
+
+---
+
+## 🧠 Inspiration  
+Most people want to live sustainably, but they don’t know where to start. Product labels can be misleading, and research takes time. GreenScan solves this by making AI do the heavy lifting—analyze a product image and instantly offer reliable insights.
+
+---
+
+## 🛠️ Tech Stack  
+
+**Frontend:**  
+- React.js  
+- TypeScript  
+- Tailwind CSS  
+
+**Backend:**  
+- Django (REST Framework)  
+
+**AI/ML:**  
+- TensorFlow & Keras (CNN for image classification)  
+- Pre-trained and fine-tuned on labeled product image datasets  
+- OpenCV (for pre-processing)
+
+---
+
