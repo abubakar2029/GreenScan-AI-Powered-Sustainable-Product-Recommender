@@ -6,15 +6,12 @@ GreenScan is an AI-powered web application that helps users make eco-friendly sh
 Our mission is to empower consumers to make responsible, eco-conscious choices using the power of artificial intelligence.
 
 📸 Key Feature: Product Image Analysis
-Users upload a product image (e.g. a shampoo bottle, packaged food, or plastic item)
 
-AI model identifies the product using image classification
-
-The system checks the sustainability rating of that product
-
-Displays eco-score (e.g. Green, Average, Not Sustainable)
-
-Recommends eco-friendly alternatives
+- Users upload a product image (e.g. a shampoo bottle, packaged food, or plastic item)
+- AI model identifies the product using image classification
+- The system checks the sustainability rating of that product
+- Displays eco-score (e.g. Green, Average, Not Sustainable)
+- Recommends eco-friendly alternatives
 
 🚀 Features
 📷 Upload product image for AI analysis
