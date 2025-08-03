@@ -1,5 +1,6 @@
 # GreenScan-AI-Powered-Sustainable-Product-Recommender
 📝 Description
+
 GreenScan is an AI-powered web application that helps users make eco-friendly shopping decisions. Users can upload a photo of a product, and the system uses image recognition and AI analysis to identify the item and determine its sustainability level based on environmental factors, certifications, and ingredients/materials. If the product is not sustainable, the system recommends greener alternatives.
 
 Our mission is to empower consumers to make responsible, eco-conscious choices using the power of artificial intelligence.
