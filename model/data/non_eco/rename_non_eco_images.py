@@ -17,4 +17,4 @@ files = [f for f in os.listdir()
 
 for i, f in enumerate(files):
     name, ext = os.path.splitext(f)
-    os.rename(f, f"eco_{i}{ext}")
+    os.rename(f, f"non_eco_{i}{ext}")
